@@ -38,6 +38,7 @@ using Volo.Abp.UI;
 using Volo.Abp.UI.Navigation;
 using Volo.Abp.VirtualFileSystem;
 using Volo.CmsKit.Web;
+using Volo.Abp.Identity.AspNetCore;
 
 namespace Dyabp.DyProjectName.Web
 {
@@ -56,6 +57,7 @@ namespace Dyabp.DyProjectName.Web
         typeof(AbpSwashbuckleModule)
         )]
     [DependsOn(typeof(CmsKitWebModule))]
+    [DependsOn(typeof(AbpIdentityAspNetCoreModule))]
     public class DyProjectNameWebModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)
