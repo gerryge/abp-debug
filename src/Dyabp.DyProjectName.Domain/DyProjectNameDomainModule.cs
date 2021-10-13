@@ -1,4 +1,4 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using Dyabp.DyProjectName.MultiTenancy;
 using Volo.Abp.AuditLogging;
@@ -13,6 +13,7 @@ using Volo.Abp.PermissionManagement.Identity;
 using Volo.Abp.PermissionManagement.IdentityServer;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
+using Volo.CmsKit;
 
 namespace Dyabp.DyProjectName
 {
@@ -29,6 +30,7 @@ namespace Dyabp.DyProjectName
         typeof(AbpTenantManagementDomainModule),
         typeof(AbpEmailingModule)
     )]
+    [DependsOn(typeof(CmsKitDomainModule))]
     public class DyProjectNameDomainModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
