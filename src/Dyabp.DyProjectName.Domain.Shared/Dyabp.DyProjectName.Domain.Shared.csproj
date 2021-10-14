@@ -30,4 +30,8 @@
     <PackageReference Include="Microsoft.Extensions.FileProviders.Embedded" Version="5.0.*" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Dyabp\Users\" />
+  </ItemGroup>
+
 </Project>

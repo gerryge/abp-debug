@@ -4,15 +4,17 @@ using Dyabp.DyProjectName.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace Dyabp.DyProjectName.Migrations
 {
     [DbContext(typeof(DyProjectNameDbContext))]
-    partial class DyProjectNameDbContextModelSnapshot : ModelSnapshot
+    [Migration("20211014105011_Added_DyUser_Entity")]
+    partial class Added_DyUser_Entity
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

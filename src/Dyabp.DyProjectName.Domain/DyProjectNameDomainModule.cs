@@ -15,6 +15,9 @@ using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
 using Volo.CmsKit;
 using Volo.Abp.Users;
+using Volo.Abp.AutoMapper;
+using Volo.Abp.Domain.Entities.Events.Distributed;
+using Dyabp.DyProjectName.Dyabp.Users;
 
 namespace Dyabp.DyProjectName
 {
@@ -40,6 +43,16 @@ namespace Dyabp.DyProjectName
             Configure<AbpMultiTenancyOptions>(options =>
             {
                 options.IsEnabled = MultiTenancyConsts.IsEnabled;
+            });
+
+            Configure<AbpAutoMapperOptions>(options =>
+            {
+                options.AddProfile<DyProjectNameDomainAutoMapperProfile>(validate: false);
+            });
+
+            Configure<AbpDistributedEntityEventOptions>(options =>
+            {
+                options.EtoMappings.Add<IdentityUser, DyUserEto>(typeof(DyProjectNameDomainModule));
             });
 
 #if DEBUG

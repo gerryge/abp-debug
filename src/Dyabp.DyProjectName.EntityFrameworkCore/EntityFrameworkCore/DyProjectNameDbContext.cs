@@ -14,6 +14,8 @@ using Volo.Abp.TenantManagement;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.CmsKit.EntityFrameworkCore;
 using Volo.Abp.Users.EntityFrameworkCore;
+using Dyabp.DyProjectName.Dyabp.Users;
+using Volo.Abp.EntityFrameworkCore.Modeling;
 
 namespace Dyabp.DyProjectName.EntityFrameworkCore
 {
@@ -52,8 +54,10 @@ namespace Dyabp.DyProjectName.EntityFrameworkCore
         public DbSet<Tenant> Tenants { get; set; }
         public DbSet<TenantConnectionString> TenantConnectionStrings { get; set; }
 
+        public DbSet<DyUser> User { get; set; }
+
         #endregion
-        
+
         public DyProjectNameDbContext(DbContextOptions<DyProjectNameDbContext> options)
             : base(options)
         {
@@ -84,6 +88,19 @@ namespace Dyabp.DyProjectName.EntityFrameworkCore
             //    //...
             //});
             builder.ConfigureCmsKit();
+
+            builder.Entity<DyUser>(b =>
+            {
+                b.ToTable(DyProjectNameConsts.DbTablePrefix + "Users", DyProjectNameConsts.DbSchema);
+
+                b.ConfigureByConvention();
+                b.ConfigureAbpUser();
+
+                b.HasIndex(x => new { x.TenantId, x.UserName });
+                b.HasIndex(x => new { x.TenantId, x.Email });
+
+                b.ApplyObjectExtensionMappings();
+            });
         }
     }
 }
