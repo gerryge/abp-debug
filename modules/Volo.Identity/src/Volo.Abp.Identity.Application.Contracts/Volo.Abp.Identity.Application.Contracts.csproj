@@ -17,7 +17,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Volo.Abp.Identity.Domain.Shared\Volo.Abp.Identity.Domain.Shared.csproj" />
     <PackageReference Include="Volo.Abp.PermissionManagement.Application.Contracts" Version="4.4.3" />
-    <PackageReference Include="Volo.Abp.Users.Abstractions" Version="4.4.3" />
+    <ProjectReference Include="..\..\..\Volo.Users\src\Volo.Abp.Users.Abstractions\Volo.Abp.Users.Abstractions.csproj" />
     <PackageReference Include="Volo.Abp.Authorization" Version="4.4.3" />
   </ItemGroup>
 

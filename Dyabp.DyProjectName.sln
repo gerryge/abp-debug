@@ -5,6 +5,20 @@ VisualStudioVersion = 16.0.29020.237
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Dyabp.DyProjectName.Domain", "src\Dyabp.DyProjectName.Domain\Dyabp.DyProjectName.Domain.csproj", "{554AD327-6DBA-4F8F-96F8-81CE7A0C863F}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Users.MongoDB", "modules\Volo.Users\src\Volo.Abp.Users.MongoDB\Volo.Abp.Users.MongoDB.csproj", "{a75a58fc-09b8-41a6-8f1c-012c27cbbb4c}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Users.EntityFrameworkCore", "modules\Volo.Users\src\Volo.Abp.Users.EntityFrameworkCore\Volo.Abp.Users.EntityFrameworkCore.csproj", "{871c1d69-3cad-46fb-9b05-fc98c6f1e2a4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Users.Domain.Shared", "modules\Volo.Users\src\Volo.Abp.Users.Domain.Shared\Volo.Abp.Users.Domain.Shared.csproj", "{f9554801-4882-4f1d-8e7c-91e3f0b18525}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Users.Domain", "modules\Volo.Users\src\Volo.Abp.Users.Domain\Volo.Abp.Users.Domain.csproj", "{643bafa4-ec0b-4d48-9f54-3e56445c55a7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.Users.Abstractions", "modules\Volo.Users\src\Volo.Abp.Users.Abstractions\Volo.Abp.Users.Abstractions.csproj", "{0361f908-3d7c-4a58-b2b9-1f67894607b6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volo.Users.Tests", "Volo.Users.Tests", "{1f18ca4e-0d2e-482e-a315-a3618c2a5c9a}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Volo.Users", "Volo.Users", "{f678f632-6d7f-4181-8d10-c97048553c6b}"
+EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.IdentityServer.TestBase", "modules\Volo.IdentityServer\test\Volo.Abp.IdentityServer.TestBase\Volo.Abp.IdentityServer.TestBase.csproj", "{14dd8ead-9457-4c8b-8548-d82ef252c01b}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Volo.Abp.IdentityServer.MongoDB.Tests", "modules\Volo.IdentityServer\test\Volo.Abp.IdentityServer.MongoDB.Tests\Volo.Abp.IdentityServer.MongoDB.Tests.csproj", "{40237da3-7900-44fa-bcaf-24bd641fe8c0}"
@@ -183,6 +197,26 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{a75a58fc-09b8-41a6-8f1c-012c27cbbb4c}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{a75a58fc-09b8-41a6-8f1c-012c27cbbb4c}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{a75a58fc-09b8-41a6-8f1c-012c27cbbb4c}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{a75a58fc-09b8-41a6-8f1c-012c27cbbb4c}.Release|Any CPU.Build.0 = Release|Any CPU
+		{871c1d69-3cad-46fb-9b05-fc98c6f1e2a4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{871c1d69-3cad-46fb-9b05-fc98c6f1e2a4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{871c1d69-3cad-46fb-9b05-fc98c6f1e2a4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{871c1d69-3cad-46fb-9b05-fc98c6f1e2a4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{f9554801-4882-4f1d-8e7c-91e3f0b18525}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{f9554801-4882-4f1d-8e7c-91e3f0b18525}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{f9554801-4882-4f1d-8e7c-91e3f0b18525}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{f9554801-4882-4f1d-8e7c-91e3f0b18525}.Release|Any CPU.Build.0 = Release|Any CPU
+		{643bafa4-ec0b-4d48-9f54-3e56445c55a7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{643bafa4-ec0b-4d48-9f54-3e56445c55a7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{643bafa4-ec0b-4d48-9f54-3e56445c55a7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{643bafa4-ec0b-4d48-9f54-3e56445c55a7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0361f908-3d7c-4a58-b2b9-1f67894607b6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0361f908-3d7c-4a58-b2b9-1f67894607b6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0361f908-3d7c-4a58-b2b9-1f67894607b6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0361f908-3d7c-4a58-b2b9-1f67894607b6}.Release|Any CPU.Build.0 = Release|Any CPU
 		{14dd8ead-9457-4c8b-8548-d82ef252c01b}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{14dd8ead-9457-4c8b-8548-d82ef252c01b}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{14dd8ead-9457-4c8b-8548-d82ef252c01b}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -492,6 +526,13 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{a75a58fc-09b8-41a6-8f1c-012c27cbbb4c} = {f678f632-6d7f-4181-8d10-c97048553c6b}
+		{871c1d69-3cad-46fb-9b05-fc98c6f1e2a4} = {f678f632-6d7f-4181-8d10-c97048553c6b}
+		{f9554801-4882-4f1d-8e7c-91e3f0b18525} = {f678f632-6d7f-4181-8d10-c97048553c6b}
+		{643bafa4-ec0b-4d48-9f54-3e56445c55a7} = {f678f632-6d7f-4181-8d10-c97048553c6b}
+		{0361f908-3d7c-4a58-b2b9-1f67894607b6} = {f678f632-6d7f-4181-8d10-c97048553c6b}
+		{1f18ca4e-0d2e-482e-a315-a3618c2a5c9a} = {04DBDB01-70F4-4E06-B468-8F87850B22BE}
+		{f678f632-6d7f-4181-8d10-c97048553c6b} = {4bb56ca7-f50c-4991-bf4c-6e301ae46941}
 		{14dd8ead-9457-4c8b-8548-d82ef252c01b} = {4466a8b3-48fb-4a3c-bee8-9c51f1a7652b}
 		{40237da3-7900-44fa-bcaf-24bd641fe8c0} = {4466a8b3-48fb-4a3c-bee8-9c51f1a7652b}
 		{9c9ea899-5fbc-4869-97bb-6c288399d8dd} = {4466a8b3-48fb-4a3c-bee8-9c51f1a7652b}

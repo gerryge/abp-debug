@@ -22,7 +22,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Volo.Abp.Identity.Domain.Shared\Volo.Abp.Identity.Domain.Shared.csproj" />
-    <PackageReference Include="Volo.Abp.Users.Domain" Version="4.4.3" />
+    <ProjectReference Include="..\..\..\Volo.Users\src\Volo.Abp.Users.Domain\Volo.Abp.Users.Domain.csproj" />
     <PackageReference Include="Volo.Abp.AutoMapper" Version="4.4.3" />
     <PackageReference Include="Volo.Abp.Ddd.Domain" Version="4.4.3" />
   </ItemGroup>

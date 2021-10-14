@@ -16,7 +16,7 @@
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Ddd.Domain" Version="4.4.3" />
     <ProjectReference Include="..\Volo.CmsKit.Domain.Shared\Volo.CmsKit.Domain.Shared.csproj" />
-    <PackageReference Include="Volo.Abp.Users.Domain" Version="4.4.3" />
+    <ProjectReference Include="..\..\..\Volo.Users\src\Volo.Abp.Users.Domain\Volo.Abp.Users.Domain.csproj" />
     <PackageReference Include="Volo.Abp.BlobStoring" Version="4.4.3" />
   </ItemGroup>
 

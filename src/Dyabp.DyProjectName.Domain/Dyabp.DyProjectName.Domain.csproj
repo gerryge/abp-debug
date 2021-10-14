@@ -13,6 +13,7 @@
 
   <ItemGroup>
     <PackageReference Include="Volo.Abp.Emailing" Version="4.4.3" />
+    <ProjectReference Include="..\..\modules\Volo.Users\src\Volo.Abp.Users.Domain\Volo.Abp.Users.Domain.csproj" />
     <ProjectReference Include="..\..\modules\Volo.Identity\src\Volo.Abp.Identity.Domain\Volo.Abp.Identity.Domain.csproj" />
     <ProjectReference Include="..\..\modules\Volo.Identity\src\Volo.Abp.PermissionManagement.Domain.Identity\Volo.Abp.PermissionManagement.Domain.Identity.csproj" />
     <ProjectReference Include="..\..\modules\Volo.IdentityServer\src\Volo.Abp.IdentityServer.Domain\Volo.Abp.IdentityServer.Domain.csproj" />

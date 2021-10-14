@@ -13,6 +13,7 @@ using Volo.Abp.TenantManagement;
 using Volo.Abp.Validation.Localization;
 using Volo.Abp.VirtualFileSystem;
 using Volo.CmsKit;
+using Volo.Abp.Users;
 
 namespace Dyabp.DyProjectName
 {
@@ -27,6 +28,7 @@ namespace Dyabp.DyProjectName
         typeof(AbpTenantManagementDomainSharedModule)
         )]
     [DependsOn(typeof(CmsKitDomainSharedModule))]
+    [DependsOn(typeof(AbpUsersDomainSharedModule))]
     public class DyProjectNameDomainSharedModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)

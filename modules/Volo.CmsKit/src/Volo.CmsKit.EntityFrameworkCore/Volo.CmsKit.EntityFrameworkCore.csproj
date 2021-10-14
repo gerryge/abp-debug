@@ -11,7 +11,7 @@
   <ItemGroup>
     <PackageReference Include="Volo.Abp.EntityFrameworkCore" Version="4.4.3" />
     <ProjectReference Include="..\Volo.CmsKit.Domain\Volo.CmsKit.Domain.csproj" />
-    <PackageReference Include="Volo.Abp.Users.EntityFrameworkCore" Version="4.4.3" />
+    <ProjectReference Include="..\..\..\Volo.Users\src\Volo.Abp.Users.EntityFrameworkCore\Volo.Abp.Users.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
 </Project>

@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\modules\Volo.Users\src\Volo.Abp.Users.Domain.Shared\Volo.Abp.Users.Domain.Shared.csproj" />
     <ProjectReference Include="..\..\modules\Volo.Identity\src\Volo.Abp.Identity.Domain.Shared\Volo.Abp.Identity.Domain.Shared.csproj" />
     <ProjectReference Include="..\..\modules\Volo.IdentityServer\src\Volo.Abp.IdentityServer.Domain.Shared\Volo.Abp.IdentityServer.Domain.Shared.csproj" />
     <PackageReference Include="Volo.Abp.BackgroundJobs.Domain.Shared" Version="4.4.3" />

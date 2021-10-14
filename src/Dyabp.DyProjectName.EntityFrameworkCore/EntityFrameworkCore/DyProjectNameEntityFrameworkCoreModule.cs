@@ -11,6 +11,7 @@ using Volo.Abp.PermissionManagement.EntityFrameworkCore;
 using Volo.Abp.SettingManagement.EntityFrameworkCore;
 using Volo.Abp.TenantManagement.EntityFrameworkCore;
 using Volo.CmsKit.EntityFrameworkCore;
+using Volo.Abp.Users.EntityFrameworkCore;
 
 namespace Dyabp.DyProjectName.EntityFrameworkCore
 {
@@ -27,6 +28,7 @@ namespace Dyabp.DyProjectName.EntityFrameworkCore
         typeof(AbpFeatureManagementEntityFrameworkCoreModule)
         )]
     [DependsOn(typeof(CmsKitEntityFrameworkCoreModule))]
+    [DependsOn(typeof(AbpUsersEntityFrameworkCoreModule))]
     public class DyProjectNameEntityFrameworkCoreModule : AbpModule
     {
         public override void PreConfigureServices(ServiceConfigurationContext context)

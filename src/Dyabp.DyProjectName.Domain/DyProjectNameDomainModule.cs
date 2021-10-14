@@ -14,6 +14,7 @@ using Volo.Abp.PermissionManagement.IdentityServer;
 using Volo.Abp.SettingManagement;
 using Volo.Abp.TenantManagement;
 using Volo.CmsKit;
+using Volo.Abp.Users;
 
 namespace Dyabp.DyProjectName
 {
@@ -31,6 +32,7 @@ namespace Dyabp.DyProjectName
         typeof(AbpEmailingModule)
     )]
     [DependsOn(typeof(CmsKitDomainModule))]
+    [DependsOn(typeof(AbpUsersDomainModule))]
     public class DyProjectNameDomainModule : AbpModule
     {
         public override void ConfigureServices(ServiceConfigurationContext context)
